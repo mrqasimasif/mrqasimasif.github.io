@@ -1,0 +1,20 @@
+
+.headtext , .subheading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    display: flow-root;
+}
+
+.headtext{
+    font-size: 200%;
+    color: black;
+}
+.subheading{
+    font-size: 150%;
+    color: cyan;
+}
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
