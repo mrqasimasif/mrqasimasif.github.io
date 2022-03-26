@@ -31,7 +31,6 @@
     }
 }
 
-
 /* General Styling */
 
 body{
@@ -96,7 +95,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 /* header */
-nav{
+.nav{
     display: none;
 }
 
@@ -104,4 +103,23 @@ nav{
 
 .intro {
     position: relative;
+}
+
+
+@media(min-width : 600px){
+    .intro{
+        display:grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+    }
 }
