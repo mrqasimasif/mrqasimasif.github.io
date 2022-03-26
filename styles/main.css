@@ -43,6 +43,10 @@ body{
     line-height: 1.6;
 }
 
+section{
+    padding: 5em 2em;
+}
+
 img{
     display: block;
     max-width: 100%;
@@ -53,7 +57,7 @@ img{
 h1,
 h2,
 h3{
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -88,4 +92,16 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about{
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    margin-bottom:  1em;
+}
+
+/* header */
+nav{
+    display: none;
+}
+
+/* intro */
+
+.intro {
+    position: relative;
 }
