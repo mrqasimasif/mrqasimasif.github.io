@@ -96,7 +96,7 @@ h3 { font-size: var(--fs-h3) }
 
 /* header */
 .nav{
-    display: none;
+    /*display: none;*/
 }
 
 /* intro */
