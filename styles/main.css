@@ -1,12 +1,14 @@
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
 
-:root{
-    --ff-primary: 'Source Sans Pro', sans-serif;;
-    --ff-secondary: 'Source Code Pro', monospace;;
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    ;
+    --ff-secondary: 'Source Code Pro', monospace;
+    ;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -22,8 +24,8 @@
 
 }
 
-@media(min-width : 800px){
-    :root{
+@media(min-width : 800px) {
+    :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
@@ -33,7 +35,7 @@
 
 /* General Styling */
 
-body{
+body {
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
@@ -42,11 +44,11 @@ body{
     line-height: 1.6;
 }
 
-section{
+section {
     padding: 5em 2em;
 }
 
-img{
+img {
     display: block;
     max-width: 100%;
 }
@@ -55,48 +57,56 @@ img{
 
 h1,
 h2,
-h3{
+h3 {
     line-height: 1;
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
 
 
 /* Slef defined classes */
 
-.section__title{
+.section__title {
     margin-bottom: 0.25em;
 }
 
-.section__title--intro{
+.section__title--intro {
     font-weight: var(--fw-reg);
 }
 
-.section__title--intro strong{
+.section__title--intro strong {
     display: block;
     font-weight: var(--fw-bold);
 }
 
 
 /* section subtitles */
-.section__subtitle{
+.section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
 }
 
 .section__subtitle--intro,
-.section__subtitle--about{
+.section__subtitle--about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
-    margin-bottom:  1em;
+    margin-bottom: 1em;
 }
 
 /* header */
-.nav{
-    /*display: none;*/
+.nav {
+    display: none;
 }
 
 /* intro */
@@ -106,19 +116,19 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
-@media(min-width : 600px){
-    .intro{
-        display:grid;
+@media(min-width : 600px) {
+    .intro {
+        display: grid;
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
-        "img title"
-        "img subtitle";
+            "img title"
+            "img subtitle";
         grid-template-columns: min-content max-content;
     }
 
-    .intro__img{
+    .intro__img {
         grid-area: img;
         min-width: 250px;
     }
