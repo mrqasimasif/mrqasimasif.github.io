@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Root Settings*/
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     ;
@@ -18,9 +19,12 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --clr-light: $fff;
+    --clr-light: #ffffff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+
+    --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 
 }
 
@@ -32,6 +36,40 @@
         --fs-body: 1.125rem;
     }
 }
+
+
+/* Media Frame*/
+@media(min-width : 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+
+    }
+}
+
 
 /* General Styling */
 
@@ -77,6 +115,13 @@ h3 {
 
 /* Slef defined classes */
 
+/*------------------------------Intro Section--------------------------------------------*/
+.intro__img {
+    box-shadow: var(--box-shadow);
+}
+
+/* section title */
+
 .section__title {
     margin-bottom: 0.25em;
 }
@@ -102,6 +147,11 @@ h3 {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    padding: .25em 1.5em;
+}
+
+.section__subtitle--intro {
+    display: inline-block;
 }
 
 /* header */
@@ -116,20 +166,12 @@ h3 {
 }
 
 
-@media(min-width : 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas:
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
+/*  ----------------------------------------my skills sections--------------------------------------  */
 
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-    }
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(/assets/img/bg4.webp);
+
+    background-size: cover;
+    color: var(--clr-light);
 }
