@@ -170,8 +170,8 @@ h3 {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(/assets/img/bg4.webp);
-
+    background-image: url(/assets/img/bg8.jpeg);
+    background-blend-mode: multiply;
     background-size: cover;
     color: var(--clr-light);
 }
