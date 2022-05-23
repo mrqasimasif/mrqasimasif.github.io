@@ -67,6 +67,11 @@ strong {
     outline-offset: 3px;
 }
 
+.logo {
+    max-width: 300px;
+    margin: 0.5em 1em;
+}
+
 /* header */
 .nav {
     display: none;
@@ -213,13 +218,13 @@ h3 {
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin: 0.5em auto 0.9em;
     background: var(--clr-light);
     opacity: 0.5;
 }
 
 .services {
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 
 .service {
@@ -240,4 +245,50 @@ h3 {
     }
 }
 
-/*  ----------------------------------------my skills sections--------------------------------------  */
+/*  ----------------------------------------about me sections--------------------------------------  */
+
+.about-me {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about__me--img {
+    box-shadow: var(--box-shadow);
+
+}
+
+@media (min-width: 650px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+
+    }
+
+    .section__title--about {
+        grid-area: title;
+    }
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -2em;
+        width: calc(100% + 4em);
+        height: 2em;
+        padding-left: 2em;
+        padding-right: calc(300px+4em);
+    }
+
+    .about__me--img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+/*  ----------------------------------------my work sections--------------------------------------  */
