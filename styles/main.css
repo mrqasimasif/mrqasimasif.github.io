@@ -117,14 +117,6 @@ h3 {
     font-size: var(--fs-h3)
 }
 
-
-/* Slef defined classes */
-
-/*------------------------------Intro Section--------------------------------------------*/
-.intro__img {
-    box-shadow: var(--box-shadow);
-}
-
 /* section title */
 .section__title {
     margin-bottom: 0.25em;
@@ -159,9 +151,20 @@ h3 {
 }
 
 
+.section__subtitle--projects {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+/* -----------------------------------------Intro----------------------------------------- */
 /* intro */
 .intro {
     position: relative;
+}
+
+.intro__img {
+    box-shadow: var(--box-shadow);
 }
 
 /* Media Frame*/
@@ -292,3 +295,40 @@ h3 {
 }
 
 /*  ----------------------------------------my work sections--------------------------------------  */
+
+
+.my-projects {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+.portfolio__item {
+    background-color: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+    ;
+}
+
+.portfolio__img:focus {
+    position: relative;
+    z-index: 9;
+}
+
+.portfolio__img:hover,
+.portfolio__img:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .5;
+}
