@@ -15,15 +15,26 @@
     <!-- Update these with your own fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
         rel="stylesheet">
+
+    <!-- 'Dancing Script', cursive -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
     <title>Muhammad Qasim</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="/assets/logo/logosigntp.png" alt="Logo Image">
+            <a href="index.html" class="logo__img"><img src="/assets/logo/logosigntp.png" alt="Logo Image"></a>
+            <!-- <img src="/assets/logo/logosigntp.png" alt="Logo Image"> -->
         </div>
-        <button class="nav-toggle" aria-label="toggle notification">
+
+        <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
@@ -59,31 +70,30 @@
         <h2 class="section__title section__title--services">What I do</h2>
         <div class="services">
             <div class="service">
-                <h3>Machine Learning / Data Science</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <h3 class="service__heading">Machine Learning / Data Science</h3>
+                <p>I have been working as a Machine Learning and Deep Learing reseacher and developer since last 2
+                    years. I have developed several ML powered applications and perfromed rsearch in internantional
+                    labs.</p>
             </div> <!-- / service -->
 
             <div class="service">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <h3 class="service__heading">Web Development</h3>
+                <p>I am a web dev starter as comapared to machine learning. I am enthusiast to learn MERN stack and a
+                    touch of django backends for machine learning deployment. I love to develop creative desings fromm
+                    scratch and minimal code.</p>
             </div> <!-- / service -->
 
             <div class="service">
-                <h3>Mobile App Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <h3 class="service__heading">Mobile App Development</h3>
+                <p>Mobile App Development is another craze for me. I am working to build machine learning powered mobile
+                    appliations for assistance in general well being. I have wokred in flutter and Kotlin to build
+                    mobile applications.</p>
             </div> <!-- / service -->
 
             <div class="service">
-                <h3>UI / UX</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <h3 class="service__heading">UI / UX</h3>
+                <p>I am expert in designing digital prototype for mobile apps, websites and desktop
+                    apps. I have worked to maximize user experience and desing an intuitive user interfaces.</p>
             </div> <!-- / service -->
         </div> <!-- / services -->
 
@@ -120,57 +130,57 @@
         <div class="portfolio">
             <!-- Portfolio item 1 -->
             <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="/assets/img/portfolio1.jpg" alt="Image 1">
+                <img class="portfolio__img" src="/assets/img/ml.jpeg" alt="Machine Learning Img">
             </a>
 
             <!-- Portfolio item 2 -->
             <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="/assets/img/portfolio2.jpeg" alt="Image 1">
+                <img class="portfolio__img" src="/assets/img/ds.jpeg" alt="Data Science Img">
             </a>
 
             <!-- Portfolio item 3 -->
             <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="/assets/img/portfolio3.jpeg" alt="Image 1">
+                <img class="portfolio__img" src="/assets/img/portfolio4a.jpeg" alt="UI / UX Img">
             </a>
 
             <!-- Portfolio item 4 -->
             <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="/assets/img/portfolio4a.jpeg" alt="Image 1">
+                <img class="portfolio__img" src="/assets/img/portfolio5.jpeg" alt="Web Dev Img">
             </a>
 
             <!-- Portfolio item 5 -->
             <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="/assets/img/portfolio5.jpeg" alt="Image 1">
+                <img class="portfolio__img" src="/assets/img/usab.png" alt="User Testing Img">
             </a>
 
             <!-- Portfolio item 6 -->
             <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="/assets/img/portfolio6.png" alt="Image 1">
+                <img class="portfolio__img" src="/assets/img/langs.jpeg" alt="Langs Img">
             </a>
         </div>
     </section>
 
-    <footer>
-        <a href="mailto:meqasimasif@gmail.com" class="footer__link">mrqasimasif@gmail.com</a>
-        <ul class="social-list">
+    <footer class="footer">
+        <a href="mailto:meqasimasif@gmail.com" class="footer__link" target="_blank">meqasimasif@gmail.com</a>
+        <ul class="social__list">
             <li class="social__list--item">
-                <a href="https://linkedin.com/in/mrqasimasif" class="social__list--link">
+                <a href="https://linkedin.com/in/mrqasimasif" class="social__list--link" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
 
             <li class="social__list--item">
-                <a href="https://instagram.com/mrqasimasif" class="social__list--link"> <i
+                <a href="https://instagram.com/mrqasimasif" class="social__list--link" target="_blank"> <i
                         class="fa-brands fa-instagram"></i></a>
             </li>
 
             <li class="social__list--item">
-                <a href="https://facebook.com/mrqasimasif" class="social__list--link"><i
+                <a href="https://facebook.com/mrqasimasif" class="social__list--link" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
             </li>
 
             <li class="social__list--item">
-                <a href="https://githuub.com/mrqasimasif" class="social__list--link">
+                <a href="https://githuub.com/mrqasimasif" class="social__list--link" target="_blank">
                     <i class="fa-brands fa-github"></i></a>
             </li>
         </ul>
