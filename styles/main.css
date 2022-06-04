@@ -63,8 +63,9 @@ strong {
 }
 
 :focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    outline: 1px solid var(--clr-accent);
+    border-radius: .5em;
+    outline-offset: 6px;
 }
 
 /* header */
@@ -76,9 +77,7 @@ strong {
 }
 
 .logo {
-    width: calc(25%);
-    height: 10px;
-
+    max-width: 300px;
 }
 
 .nav {
@@ -89,10 +88,13 @@ strong {
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 1, 0.5, 1);
     z-index: 1000;
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
+
+
 
 .nav__list {
     list-style: none;
@@ -117,12 +119,41 @@ strong {
 }
 
 .nav-toggle {
-    padding: 1em;
+    padding: .5em;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: 1em;
+    top: 1em;
+    z-index: 10000;
+}
+
+/* .nav-toggle:focus {
+    outline: 1px solid var(--clr-dark);
+} */
+
+/* Js class */
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+    background: var(--clr-accent);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+    background: var(--clr-accent);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 /* Hamburger button */
@@ -132,10 +163,12 @@ strong {
     position: relative;
 }
 
+
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
