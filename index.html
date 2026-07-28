@@ -1,946 +1,1054 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17171a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#eeeef1" media="(prefers-color-scheme: light)">
 
-  <title>Muhammad Qasim | Data Scientist | ML Engineer | Python Developer</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-  <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/256/source-code--v2.png" />
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <title>Muhammad Qasim — Software Engineer</title>
+  <meta name="description"
+    content="Muhammad Qasim — Software Engineer with an MS in Computer Science from the University of Kentucky. Software development, web technologies, and system design.">
+  <meta name="author" content="Muhammad Qasim">
+  <link rel="canonical" href="https://mrqasimasif.github.io/">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrqasimasif.github.io/">
+  <meta property="og:title" content="Muhammad Qasim — Machine Learning Engineer">
+  <meta property="og:description"
+    content="MS Computer Science (University of Kentucky). Machine learning, computer vision, NLP and LLM systems.">
+  <meta property="og:image" content="https://mrqasimasif.github.io/assets/img/qasim01.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@mrqasimasif">
+  <meta name="twitter:title" content="Muhammad Qasim — Machine Learning Engineer">
+  <meta name="twitter:image" content="https://mrqasimasif.github.io/assets/img/qasim01.jpeg">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/qasim01.jpeg">
+  <link rel="manifest" href="site.webmanifest">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  </noscript>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Without JS the tab panes never activate, so show them all stacked instead -->
+  <noscript>
+    <style>
+      article { display: block !important; }
+      .project-item { display: block !important; }
+      .navbar { display: none; }
+      .sidebar-info_more { opacity: 1 !important; visibility: visible !important; }
+      .sidebar { max-height: none !important; }
+      .skill-progress-fill { transition: none !important; }
+    </style>
+  </noscript>
+
+  <!-- Set the theme before first paint so there is no flash -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-169007209-3');
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var sys = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", saved || sys);
+      } catch (e) { }
+    })();
   </script>
-  <style>
-    header {
-      background-image: url("bg.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-  </style>
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Qasim",
+    "url": "https://mrqasimasif.github.io/",
+    "image": "https://mrqasimasif.github.io/assets/img/qasim01.jpeg",
+    "jobTitle": "Machine Learning Engineer",
+    "email": "mailto:meqasimasif@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lexington", "addressRegion": "KY", "addressCountry": "US" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Kentucky" },
+      { "@type": "CollegeOrUniversity", "name": "Fayetteville State University" },
+      { "@type": "CollegeOrUniversity", "name": "University of Engineering and Technology, Lahore" }
+    ],
+    "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Large Language Models", "Medical Imaging", "Python"],
+    "sameAs": [
+      "https://github.com/mrqasimasif",
+      "https://www.linkedin.com/in/mrqasimasif",
+      "https://twitter.com/mrqasimasif",
+      "https://instagram.com/mrqasimasif"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
+  <!-- ===== Inline icon sprite — no icon-font requests ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.7A5.2 5.2 0 0 0 20 5.1a4.9 4.9 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.3 12.3 0 0 0-6.6 0C7.2 1.2 6.1 1.5 6.1 1.5A4.9 4.9 0 0 0 6 5.1a5.2 5.2 0 0 0-1.4 3.7c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.6V22" />
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-11h4v1.5A6 6 0 0 1 16 8z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.8l7.5-8.6L2.4 2h6.6l4.6 6.7L18.9 2zm-1.1 18h1.7L7.3 3.8H5.5L17.8 20z" />
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m2 7 10 6 10-6" />
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.6 2.8a2 2 0 0 1-.5 2.1L7.8 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z" />
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M22 9 12 4 2 9l10 5 10-5zM6 11.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5" />
+    </symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" />
+      <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+    </symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M9 2v6.5L3.8 18A2 2 0 0 0 5.6 21h12.8a2 2 0 0 0 1.8-3L15 8.5V2M8 2h8M6.5 14h11" />
+    </symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="9" r="6" />
+      <path d="m8.2 14-1.4 7L12 18l5.2 3-1.4-7" />
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    </symbol>
+    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" />
+      <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" />
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1L12 2z" />
+    </symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="m6 9 6 6 6-6" />
+    </symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="m15 18-6-6 6-6" />
+    </symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="m9 18 6-6-6-6" />
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+    </symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" />
+    </symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M12 5a3 3 0 0 0-6 0 3 3 0 0 0-2 5.2A3 3 0 0 0 6 16a3 3 0 0 0 6 1V5zM12 5a3 3 0 0 1 6 0 3 3 0 0 1 2 5.2A3 3 0 0 1 18 16a3 3 0 0 1-6 1" />
+    </symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z" />
+      <circle cx="12" cy="12" r="3" />
+    </symbol>
+    <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+    </symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="9" ry="3" />
+      <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5M3 12c0 1.7 4 3 9 3s9-1.3 9-3" />
+    </symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
+    </symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="m12 2 9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5" />
+    </symbol>
+    <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <circle cx="8.5" cy="8.5" r="1.5" />
+      <path d="m21 15-5-5L5 21" />
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="9" y="9" width="12" height="12" rx="2" />
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+    </symbol>
+  </svg>
 
-    <div class="container">
-      <h1>Muhammad Qasim</h1>
-      <h2 style="color:#070707">I'm an experienced <span class="typing" style="color: brown;"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="assets/files/MQResume.pdf" target="_blank"> <span>Resume</span></a></li>
+  <main>
+    <!-- ============================================================
+         SIDEBAR
+         ============================================================ -->
+    <aside class="sidebar box" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="assets/img/qasim01.jpeg" width="150" height="150" fetchpriority="high" alt="Muhammad Qasim">
+        </figure>
 
+        <div class="info-content">
+          <h1 class="name" title="Muhammad Qasim">Muhammad Qasim</h1>
+          <p class="title">Machine Learning Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn type="button" aria-expanded="false">
+          <span>Show Contacts</span>
+          <svg aria-hidden="true"><use href="#i-chevron-down" /></svg>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-mail" /></svg></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:meqasimasif@gmail.com" class="contact-link">meqasimasif@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-pin" /></svg></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Lexington, KY, USA</address>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-cap" /></svg></div>
+            <div class="contact-info">
+              <p class="contact-title">Education</p>
+              <address>MS Computer Science, UKY</address>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-briefcase" /></svg></div>
+            <div class="contact-info">
+              <p class="contact-title">Status</p>
+              <address>Open to opportunities</address>
+            </div>
+          </li>
         </ul>
-      </nav><!-- .nav-menu -->
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/mrqasimasif" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://www.github.com/mrqasimasif" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://instagram.com/mrqasimasif" target="_blank" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="https://twitter.com/mrqasimasif" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="mailto:meqasimasif@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-        <!-- Kaggle -->
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mrqasimasif" class="social-link" target="_blank" rel="noopener"
+              aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin" /></svg></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/mrqasimasif" class="social-link" target="_blank" rel="noopener"
+              aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github" /></svg></a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/mrqasimasif" class="social-link" target="_blank" rel="noopener"
+              aria-label="X (Twitter)"><svg aria-hidden="true"><use href="#i-x" /></svg></a>
+          </li>
+          <li class="social-item">
+            <a href="https://instagram.com/mrqasimasif" class="social-link" target="_blank" rel="noopener"
+              aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram" /></svg></a>
+          </li>
+          <li class="social-item">
+            <a href="assets/files/MQResume.pdf" class="social-link" target="_blank" rel="noopener"
+              aria-label="Download résumé"><svg aria-hidden="true"><use href="#i-download" /></svg></a>
+          </li>
+        </ul>
       </div>
+    </aside>
 
-    </div>
-  </header><!-- End Header -->
+    <!-- ============================================================
+         MAIN CONTENT
+         ============================================================ -->
+    <div class="main-content" id="mainContent">
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+      <nav class="navbar" aria-label="Primary">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link type="button">About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link type="button">Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link type="button">Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link type="button">Contact</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link type="button">Gallery</button></li>
+          <li class="navbar-item">
+            <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle colour theme">
+              <svg class="icon-sun" aria-hidden="true"><use href="#i-sun" /></svg>
+              <svg class="icon-moon" aria-hidden="true"><use href="#i-moon" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container" style="margin-top: 40px; margin-bottom: 42px;">
+      <!-- ===================== ABOUT ===================== -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
 
-      <div class="row" style="margin-top: 40px;">
-        <div class="col-lg-4" data-aos="fade-right" style="text-align: center; margin-top: 50px;">
-          <a href="assets/img/qasim01.jpeg"><img src="assets/img/qasim01.jpeg"
-              class="img-fluid d-flex flex-column justify-content-center align-items-center"
-              alt="Qaiser Profile Picture" height="300px" width="300px" style="border-radius: 50%;"></a>
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p style="text-align: justify;">Experienced Deep Learning and Computer Vision Engineer with 1+ years of
-            industrial experience. Skilled in Deep Learning, Computer Vision, NLP, and Data Science. Strong R&D
-            professional currently working as an Analyst Software Engineer at Ibex Global. I am a passionate
-            developer who thrives to design and develop efficient A.I solutons to industrial problems 😍.
+        <section class="about-text">
+          <p>
+            I'm a machine-learning engineer who likes getting models out of the notebook and into something
+            people can actually use — computer vision, NLP and LLM pipelines wrapped in APIs that hold up in
+            production. I recently finished an <strong>MS in Computer Science at the University of
+              Kentucky</strong>, where my work sat at the intersection of deep learning, medical imaging and
+            genomics.
           </p>
-          <p style="text-align: justify;">I got my bachelors from the department of Computer Science, University of
-            Engineering and Technology Lahore. I had my exchange program from a prestigious State university of the
-            United States - FAYETTEVILLE STATE UNIVERSITY NORTH CAROLINA, USA 👌.
+          <p>
+            My route here ran through <strong>UET Lahore</strong> (BS Computer Science, top 3 of the department),
+            a US State Department <strong>Global UGRAD</strong> exchange semester at
+            <strong>Fayetteville State University</strong>, and industry R&amp;D work at
+            <strong>AxcelerateAI</strong> and <strong>Omdena</strong>. Along the way I've taught Data Structures
+            &amp; Algorithms labs, run hands-on ML workshops, and served as a Microsoft Learn Student Ambassador.
           </p>
-
-          <p>I have worked in diverse fields of Artificial Intelligence including deep learnig, computer vision, natural
-            language processing and data science. My main area of expertise is in industrial problem solving using state
-            of the art AI tools and technologies. I like to design and develop AI solutions for various business
-            problems involving textual, visual and time series data 😎 .</p>
-
-          <p style="text-align: justify">I am learning and practicing MLOps and Cloud technologies for
-            Machine Learning development. I also love to do researach and read about the latest technologies in the
-            field. I regularly follow top notch researchers and labs in the field so I can use thier algorithms in my
-            problems. I am an athlete BOXER by hobby🥊.
+          <p>
+            Lately I've been deep in <strong>LLM retrieval systems</strong> — semantic ranking with pgvector,
+            two-stage retrieval, evaluation harnesses — and in applying self-supervised learning to
+            <strong>medical imaging</strong>, where labels are scarce and expensive. I'm currently open to
+            ML and AI engineering roles.
           </p>
-          <!-- <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 20 October 1990</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +92 309-1234567</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Nickname:</strong> Qysr </li>
+        </section>
+
+        <section class="highlights">
+          <h3 class="h3 section-title">Highlights &amp; Successes</h3>
+
+          <ul class="highlights-list">
+            <li class="highlight-item content-card">
+              <div class="highlight-item__num">4+</div>
+              <p class="highlight-item__label">Years of experience</p>
+            </li>
+            <li class="highlight-item content-card">
+              <div class="highlight-item__num">15+</div>
+              <p class="highlight-item__label">Projects completed</p>
+            </li>
+            <li class="highlight-item content-card">
+              <div class="highlight-item__num">5+</div>
+              <p class="highlight-item__label">Certifications &amp; awards</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="showcase-posts">
+          <h3 class="h3 section-title">Featured Work</h3>
+
+          <ul class="showcase-list">
+            <li>
+              <a class="showcase-card content-card" href="https://github.com/mrqasimasif/clinIQ" target="_blank"
+                rel="noopener">
+                <div class="icon-box"><svg aria-hidden="true"><use href="#i-flask" /></svg></div>
+                <div>
+                  <span class="showcase-card__url"><svg aria-hidden="true"><use href="#i-link" /></svg>
+                    github.com/mrqasimasif/clinIQ</span>
+                  <h4 class="showcase-card__title">clinIQ</h4>
+                  <p class="showcase-card__text">
+                    Conversational AI that matches patients to clinical trials, using a two-stage retrieval
+                    pipeline with pgvector semantic ranking.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="showcase-card content-card" href="assets/files/MQResume.pdf" target="_blank" rel="noopener">
+                <div class="icon-box"><svg aria-hidden="true"><use href="#i-eye" /></svg></div>
+                <div>
+                  <span class="showcase-card__url"><svg aria-hidden="true"><use href="#i-link" /></svg>
+                    Undergraduate thesis</span>
+                  <h4 class="showcase-card__title">Social Interaction Guide for the Visually Impaired</h4>
+                  <p class="showcase-card__text">
+                    A mobile-compatible deep-learning app that describes surroundings and assists day-to-day
+                    navigation for visually impaired users.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- ===================== RESUME ===================== -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Career Snapshot</h2>
+        </header>
+
+        <!-- TODO(qasim): end dates below come from the 2023 résumé, where they read "Ongoing". Confirm. -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-briefcase" /></svg></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Machine Learning Engineer</h4>
+              <p class="timeline-item-org">AxcelerateAI</p>
+              <time datetime="2022-10">Oct 2022 — Aug 2023</time>
+              <ul class="timeline-points">
+                <li>Built computer-vision and machine-learning solutions inside the R&amp;D team, taking models
+                  from prototype to deployable service.</li>
+                <li>Developed English text-to-speech conversion pipelines and the tooling around them.</li>
+                <li>Worked with backend engineers to integrate models into existing production systems.</li>
               </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Lahore, PK</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> myemail@gmail.com</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+              <div class="tag-list">
+                <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">TTS</span><span
+                  class="tag">FastAPI</span>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Junior Machine Learning Engineer — Remote</h4>
+              <p class="timeline-item-org">Omdena</p>
+              <time datetime="2022-09">Sep 2022 — Aug 2023</time>
+              <ul class="timeline-points">
+                <li>Collected, cleaned and processed datasets for collaborative model-training challenges.</li>
+                <li>Worked in distributed teams across time zones on real-world social-impact problems.</li>
               </ul>
-            </div>
-          </div> -->
-        </div>
-      </div>
+              <div class="tag-list">
+                <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Data pipelines</span>
+              </div>
+            </li>
 
-    </div><!-- End About Me -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Teaching Assistant — Data Structures &amp; Algorithms</h4>
+              <p class="timeline-item-org"><a href="https://uet.edu.pk/" target="_blank" rel="noopener">UET
+                  Lahore</a></p>
+              <time datetime="2022-09">Sep 2022 — Jan 2023</time>
+              <ul class="timeline-points">
+                <li>Ran undergraduate DSA labs — walkthroughs, code review and grading for a full cohort.</li>
+                <li>Helped students get from "it compiles" to "it's actually O(n log n)".</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">C++</span><span class="tag">Algorithms</span><span class="tag">Mentoring</span>
+              </div>
+            </li>
 
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Microsoft Learn Student Ambassador — Alpha</h4>
+              <p class="timeline-item-org">Microsoft</p>
+              <time datetime="2020">2020 — 2023</time>
+              <p class="timeline-text">
+                Alpha-level ambassador. Trained students on Azure, Microsoft 365 and the wider developer
+                ecosystem through sessions, workshops and community events.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Azure</span><span class="tag">Community</span><span class="tag">Public speaking</span>
+              </div>
+            </li>
 
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Instructor — Machine Learning Workshops</h4>
+              <p class="timeline-item-org">Independent</p>
+              <time datetime="2020-12">Dec 2020 — 2023</time>
+              <p class="timeline-text">
+                Taught hands-on machine learning across several training workshops, working through real
+                datasets end-to-end rather than toy examples.
+              </p>
+              <div class="tag-list">
+                <span class="tag">scikit-learn</span><span class="tag">Jupyter</span><span class="tag">Curriculum</span>
+              </div>
+            </li>
 
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-global-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #5578ff;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-camera-3-line" style="color: #e80368;"></i>
-            <h3>Computer Vision</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-english-input" style="color: #1c7d32;"></i>
-            <h3>Natural Language Processing</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #f1081f;"></i>
-            <h3>Medical Image Analysis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
-            <h3>Data Science</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-image-line" style="color: #ffc107;"></i>
-            <h3>Image Processing</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
-            <h3>Enterpreneurship</h3>
-          </div>
-        </div>
-      </div>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Open-Source Contributor</h4>
+              <p class="timeline-item-org"><a href="https://github.com/mrqasimasif" target="_blank"
+                  rel="noopener">GitHub</a></p>
+              <time datetime="2019">2019 — Present</time>
+              <p class="timeline-text">
+                Publishing tools and learning material publicly, plus contributions to other people's projects —
+                including maintaining a Hacktoberfest repository for first-time contributors.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Git</span><span class="tag">Hacktoberfest</span>
+              </div>
+            </li>
+          </ol>
+        </section>
 
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-flask" /></svg></div>
+            <h3 class="h3">Research</h3>
+          </div>
 
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Self-Supervised Learning for Medical Image Classification</h4>
+              <p class="timeline-item-org">Graduate research</p>
+              <time datetime="2022-09">Sep 2022 — 2023</time>
+              <p class="timeline-text">
+                Investigated scalable, label-efficient methods for non-invasive skin-lesion detection using
+                self-supervised learning, plus synthetic medical image generation with Vision Transformers —
+                targeting the real bottleneck in medical ML, which is annotated data rather than model capacity.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Self-supervised</span><span class="tag">ViT</span><span class="tag">Medical
+                  imaging</span>
+              </div>
+            </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Intern — Intelligent Systems Lab</h4>
+              <p class="timeline-item-org"><a href="https://www.uncfsu.edu/" target="_blank" rel="noopener">Fayetteville
+                  State University, NC</a></p>
+              <time datetime="2022-02">Feb 2022 — May 2022</time>
+              <p class="timeline-text">
+                Implemented machine-learning algorithms from scratch — no framework safety net — and deployed
+                them on end-to-end web systems so the lab could demo results interactively.
+              </p>
+              <div class="tag-list">
+                <span class="tag">NumPy</span><span class="tag">Flask</span><span class="tag">From scratch</span>
+              </div>
+            </li>
 
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
-    <div class="container" style="margin-top: 45px; text-align: justify;">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <i class="fa fa-laptop"></i>
-          <h5> Graduate - Computer Science </h5>
-          <h4> <b> University of Kentucky, Lexington - USA</b></h4>
-          Aug 2023 - OnGoing <br> <br>
-          <b>Progam</b>: Computer Science x Medical Imagaig x Genomics <br>
-          <p><b>Description:</b> Something really worthy to be utilized in internal medicine for disease diagnosis
-            is my focus of research. <br>
-          <h6 style="text-align:left;color:#070707;padding: 0px 10px;">Relevant Experience</h6>
-          <ul style="text-align:left;color:#030303;">
-            <li>Research</li>
-            <li>Deep Learning</li>
-            <li>Internal Medicine</li>
-            <li>Conferences</li>
-            <li>Computer Science / Enterpreneurship</li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Social Interaction Guide for Visually Impaired People</h4>
+              <p class="timeline-item-org">Undergraduate thesis · UET Lahore</p>
+              <time datetime="2021-07">Jul 2021 — May 2022</time>
+              <p class="timeline-text">
+                Collected user data, then researched and built mobile-compatible machine-learning and
+                image-processing models that let visually impaired users read their surroundings and navigate
+                day-to-day interactions.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Mobile ML</span><span class="tag">Accessibility</span><span class="tag">User
+                  research</span>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- TODO(qasim): confirm MS start/finish dates. -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-cap" /></svg></div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MS, Computer Science</h4>
+              <p class="timeline-item-org"><a href="https://www.uky.edu/" target="_blank" rel="noopener">University of
+                  Kentucky, Lexington — USA</a></p>
+              <time datetime="2023-08">Aug 2023 — 2025</time>
+              <p class="timeline-text">
+                Computer Science with a focus on medical imaging and genomics — deep learning applied to
+                problems in internal medicine and disease diagnosis.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span><span
+                  class="tag">Genomics</span>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Global UGRAD — Exchange Semester</h4>
+              <p class="timeline-item-org"><a href="https://www.uncfsu.edu/" target="_blank" rel="noopener">Fayetteville
+                  State University, NC — USA</a></p>
+              <time datetime="2022-01">Jan 2022 — May 2022</time>
+              <p class="timeline-text">
+                A US Department of State funded exchange programme. Studied at the School of Mathematics &amp;
+                Computer Science and the Broadwell College of Business, interned at the Intelligent Systems Lab,
+                and represented Pakistan as a cultural ambassador.
+              </p>
+              <div class="tag-list">
+                <span class="tag">GPA 4.0</span><span class="tag">Chancellor's List</span>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">BS (Hons), Computer Science</h4>
+              <p class="timeline-item-org"><a href="https://uet.edu.pk/" target="_blank" rel="noopener">University of
+                  Engineering &amp; Technology, Lahore</a></p>
+              <time datetime="2018-10">Oct 2018 — Jan 2023</time>
+              <p class="timeline-text">
+                CGPA 3.806 — among the top 3 students of the department, first-class honours. Final-year
+                project: a deep-learning powered social interaction guide for visually impaired users.
+              </p>
+              <div class="tag-list">
+                <span class="tag">CGPA 3.806</span><span class="tag">Top 3</span><span class="tag">HCI</span>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intermediate (HSSC), Computer Science</h4>
+              <p class="timeline-item-org">Punjab College for Boys, Sialkot</p>
+              <time datetime="2016">2016 — 2018</time>
+              <p class="timeline-text">
+                Gold Medalist — 94.09% (1035/1100), first position in the division. Preceded by 92.27% at
+                matriculation, first position in the school.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><svg aria-hidden="true"><use href="#i-award" /></svg></div>
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Mathematics for Machine Learning</h4>
+              <p class="timeline-item-org">Imperial College London</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Deep Learning Specialization</h4>
+              <p class="timeline-item-org">DeepLearning.AI — Andrew Ng</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Python 3 Programming Specialization</h4>
+              <p class="timeline-item-org">University of Michigan</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Edge AI with the OpenVINO Toolkit</h4>
+              <p class="timeline-item-org">Intel</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Computer Vision Basics</h4>
+              <p class="timeline-item-org">University at Buffalo</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Machine Learning &amp; Data Analysis with Python</h4>
+              <p class="timeline-item-org">CognitiveClass.ai</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- TODO(qasim): these percentages are my estimate — adjust to taste. -->
+        <section class="skill">
+          <h3 class="h3 section-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="95"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Deep Learning — PyTorch &amp; TensorFlow</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="90"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Computer Vision</h5>
+                <data value="88">88%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="88"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">NLP &amp; LLMs</h5>
+                <data value="82">82%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="82"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Science — Pandas, NumPy, scikit-learn</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="90"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">API Development — FastAPI &amp; Flask</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="85"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">C / C++</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="75"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">MLOps — Docker, Git, Azure, AWS</h5>
+                <data value="72">72%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-progress="72"></div>
+              </div>
+            </li>
           </ul>
-          </p>
+        </section>
+      </article>
+
+      <!-- ===================== PORTFOLIO ===================== -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <ul class="filter-list">
+          <li class="filter-item"><button class="active" data-filter-btn type="button">All</button></li>
+          <li class="filter-item"><button data-filter-btn type="button">AI &amp; LLMs</button></li>
+          <li class="filter-item"><button data-filter-btn type="button">Computer Vision</button></li>
+          <li class="filter-item"><button data-filter-btn type="button">Machine Learning</button></li>
+          <li class="filter-item"><button data-filter-btn type="button">Web &amp; Systems</button></li>
+        </ul>
+
+        <div class="filter-select-box">
+          <button class="filter-select" data-select type="button" aria-haspopup="listbox" aria-expanded="false">
+            <div class="select-value" data-select-value>Select category</div>
+            <div class="select-icon"><svg aria-hidden="true"><use href="#i-chevron-down" /></svg></div>
+          </button>
+
+          <ul class="select-list" role="listbox">
+            <li class="select-item"><button data-select-item type="button">All</button></li>
+            <li class="select-item"><button data-select-item type="button">AI &amp; LLMs</button></li>
+            <li class="select-item"><button data-select-item type="button">Computer Vision</button></li>
+            <li class="select-item"><button data-select-item type="button">Machine Learning</button></li>
+            <li class="select-item"><button data-select-item type="button">Web &amp; Systems</button></li>
+          </ul>
         </div>
-        <div class="col-lg-4 col-md-4 d-flex flex-column justify-content-center align-items-center"
-          style="text-align: center;"> <a href="https://www.uky.edu/" target="_blank"><img
-              src="assets/img/education/uk.png" class="img-fluid" alt="University of Kentucky" height="250" width="250"></a></div>
-      </div>
+
+        <ul class="project-list">
+          <li class="project-item active" data-filter-item data-category="ai &amp; llms" data-repo="clinIQ">
+            <a href="https://github.com/mrqasimasif/clinIQ" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-flask" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">clinIQ</h3>
+              <p class="project-category">AI &amp; LLMs</p>
+              <p class="project-desc">Conversational clinical-trial matching — two-stage retrieval with pgvector
+                semantic ranking.</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="computer vision">
+            <a href="assets/files/MQResume.pdf" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-eye" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta"><span>Research</span></div>
+              <h3 class="project-title">Social Interaction Guide</h3>
+              <p class="project-category">Computer Vision</p>
+              <p class="project-desc">Mobile deep-learning app that describes surroundings for visually impaired
+                users.</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="machine learning"
+            data-repo="Linear-Regression-Stock-Price-Prediction">
+            <a href="https://github.com/mrqasimasif/Linear-Regression-Stock-Price-Prediction" target="_blank"
+              rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-activity" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">Stock Price Prediction</h3>
+              <p class="project-category">Machine Learning</p>
+              <p class="project-desc">Linear regression predicting 30-day price movement at ~93% accuracy.</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="computer vision"
+            data-repo="Traffic_Signal_Recognition">
+            <a href="https://github.com/mrqasimasif/Traffic_Signal_Recognition" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-eye" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">Traffic Sign Recognition</h3>
+              <p class="project-category">Computer Vision</p>
+              <p class="project-desc">CNNs trained on the German Traffic Sign dataset to classify street signage.
+              </p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="computer vision"
+            data-repo="intel-image-scene-classification-tensorflow">
+            <a href="https://github.com/mrqasimasif/intel-image-scene-classification-tensorflow" target="_blank"
+              rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-layers" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">Intel Scene Classification</h3>
+              <p class="project-category">Computer Vision</p>
+              <p class="project-desc">Six-class natural-scene classification via transfer learning in TensorFlow.
+              </p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="machine learning"
+            data-repo="Multiple-Linear-Regression-CO2-Emission-Prediction">
+            <a href="https://github.com/mrqasimasif/Multiple-Linear-Regression-CO2-Emission-Prediction" target="_blank"
+              rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-database" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">CO₂ Emission Prediction</h3>
+              <p class="project-category">Machine Learning</p>
+              <p class="project-desc">Multiple linear regression over engine and fuel characteristics.</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="web &amp; systems"
+            data-repo="RestaurantsBillingSystem">
+            <a href="https://github.com/mrqasimasif/RestaurantsBillingSystem" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-code" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">Restaurant Billing System</h3>
+              <p class="project-category">Web &amp; Systems</p>
+              <p class="project-desc">Billing system in x86 assembly with separate admin and customer flows.</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="web &amp; systems" data-repo="contribute">
+            <a href="https://github.com/mrqasimasif/contribute" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-github" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">contribute — Hacktoberfest</h3>
+              <p class="project-category">Web &amp; Systems</p>
+              <p class="project-desc">A safe place for first-time contributors to land their first pull request.
+              </p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="web &amp; systems"
+            data-repo="mrqasimasif.github.io">
+            <a href="https://github.com/mrqasimasif/mrqasimasif.github.io" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="thumb"><svg aria-hidden="true"><use href="#i-image" /></svg></div>
+                <div class="project-item-icon-box"><svg aria-hidden="true"><use href="#i-external" /></svg></div>
+              </figure>
+              <div class="project-meta" data-stats></div>
+              <h3 class="project-title">This portfolio</h3>
+              <p class="project-category">Web &amp; Systems</p>
+              <p class="project-desc">Hand-written HTML, CSS and JS. No framework, no build step, no
+                dependencies.</p>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ===================== CONTACT ===================== -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox">
+          <iframe
+            src="https://www.google.com/maps?q=Lexington,+Kentucky,+USA&output=embed"
+            width="400" height="300" loading="lazy" title="Map showing Lexington, Kentucky"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-details">
+          <h3 class="h3 section-title">Contact Details</h3>
+
+          <ul class="contact-details-list">
+            <li class="contact-item content-card">
+              <div class="icon-box"><svg aria-hidden="true"><use href="#i-mail" /></svg></div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:meqasimasif@gmail.com" class="contact-link" id="emailText">meqasimasif@gmail.com</a>
+              </div>
+              <button class="icon-box" id="copyEmail" type="button" aria-label="Copy email address">
+                <svg aria-hidden="true"><use href="#i-copy" /></svg>
+              </button>
+            </li>
+
+            <li class="contact-item content-card">
+              <div class="icon-box"><svg aria-hidden="true"><use href="#i-linkedin" /></svg></div>
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/mrqasimasif" class="contact-link" target="_blank"
+                  rel="noopener">in/mrqasimasif</a>
+              </div>
+            </li>
+
+            <li class="contact-item content-card">
+              <div class="icon-box"><svg aria-hidden="true"><use href="#i-github" /></svg></div>
+              <div class="contact-info">
+                <p class="contact-title">GitHub</p>
+                <a href="https://github.com/mrqasimasif" class="contact-link" target="_blank"
+                  rel="noopener">@mrqasimasif</a>
+              </div>
+            </li>
+
+            <li class="contact-item content-card">
+              <div class="icon-box"><svg aria-hidden="true"><use href="#i-pin" /></svg></div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Lexington, KY, USA</address>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <!--
+            TODO(qasim): GitHub Pages is static, so the form needs a third-party endpoint.
+            Sign up at https://formspree.io, create a form, then replace YOUR_FORM_ID below.
+            Until then the submit button falls back to opening the visitor's mail client.
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your message" required
+              data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <svg aria-hidden="true"><use href="#i-send" /></svg>
+              <span>Send Message</span>
+            </button>
+
+            <p class="form-note">
+              Prefer email? Write to <a href="mailto:meqasimasif@gmail.com">meqasimasif@gmail.com</a> directly.
+            </p>
+          </form>
+        </section>
+      </article>
+
+      <!-- ===================== GALLERY ===================== -->
+      <article class="gallery" data-page="gallery">
+        <header>
+          <h2 class="h2 article-title">Gallery</h2>
+        </header>
+
+        <!--
+          TODO(qasim): drop photos into assets/img/gallery/ and list them in the
+          GALLERY array at the top of assets/js/main.js. Until then this shows an empty state.
+        -->
+        <div id="galleryRoot"></div>
+      </article>
     </div>
+  </main>
 
-    <div class="container" style="margin-top: 45px; text-align: justify;">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <i class="fa fa-laptop"></i>
-          <h5> Exchange Program - USA </h5>
-          <h4> <b> Fayetteville State University North Carolina - USA</b></h4>
-          Jan 2022 - May 2022 <br> <br>
-          <b>Progam</b>: Global-UGRAD, US Department of State Funded Exchange Program<br>
-          <p><b>Description:</b> This is the most unique and diverse expeince I have had in my entire life. I experinced
-            Spring 2022 semester exchange at the above mentioned state university.
-            During that time I studied at the School of Mathematics and Computer Science and Broadwell College of
-            Business, interned at the Intelligent
-            Systems Lab and presented Pakistan as a cultural ambassador. <br>
-          <h6 style="text-align:left;color:#070707;padding: 0px 10px;">Relevant Experience</h6>
-          <ul style="text-align:left;color:#030303;">
-            <li>Leadership</li>
-            <li>Cultural Exchange</li>
-            <li>Community Service</li>
-            <li>International Exposure</li>
-            <li>Computer Science / Enterpreneurship</li>
-          </ul>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 d-flex flex-column justify-content-center align-items-center"
-          style="text-align: center;"> <a href="https://www.uncfsu.edu/" target="_blank"><img
-              src="assets/img/education/fsu.png" class="img-fluid" alt="Fayetteville State University" height="250" width="250"></a></div>
-      </div>
-    </div>
+  <!--
+    Cursor pet — purely decorative, so it is aria-hidden and never focusable.
+    CSS hides it entirely on touch devices and under prefers-reduced-motion.
+  -->
+  <div class="pet" id="pet" aria-hidden="true">
+    <svg viewBox="0 0 46 40" fill="none">
+      <!-- tail -->
+      <path class="pet-tail" d="M36 30c7 1 8-6 5-11" stroke="currentColor" stroke-width="3.2"
+        stroke-linecap="round" />
+      <!-- hind + body -->
+      <ellipse class="pet-body" cx="22" cy="28" rx="14" ry="10" fill="currentColor" />
+      <!-- legs -->
+      <rect class="pet-leg pet-leg--f" x="12" y="33" width="4.4" height="7" rx="2.2" fill="currentColor" />
+      <rect class="pet-leg pet-leg--b" x="27" y="33" width="4.4" height="7" rx="2.2" fill="currentColor" />
+      <!-- head -->
+      <circle class="pet-head" cx="22" cy="14" r="10.5" fill="currentColor" />
+      <!-- ears -->
+      <path d="M13.5 7.5 14 0.8 20 4.6Z" fill="currentColor" />
+      <path d="M30.5 7.5 30 0.8 24 4.6Z" fill="currentColor" />
+      <!-- eyes: the pupils are nudged toward the cursor from JS -->
+      <g class="pet-eyes">
+        <ellipse class="pet-eye" cx="18" cy="14" rx="2.5" ry="2.9" fill="var(--pet-eye)" />
+        <ellipse class="pet-eye" cx="26" cy="14" rx="2.5" ry="2.9" fill="var(--pet-eye)" />
+      </g>
+      <!-- nose -->
+      <path d="M22 18.4l-1.6-1.7h3.2Z" fill="var(--pet-eye)" />
+    </svg>
+  </div>
 
-    <div class="container" style="margin-top: -30px; text-align: justify;">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <i class="fa fa-laptop"></i>
-          <h5> BS - Computer Science</h5>
-          <h4> <b> University of Engineering and Technology - Lahore </b> </h4>
-          Oct 2018 - Jan 2023 <br> <br>
-          <b>FYP</b>: Social Interactio Guide For Visually Impaired People <br>
-          <p> <b>Summary:</b> I worked on a Deep Learning Powered mobile application to help visually challanged poeple
-            help in their dialy interactions and navigations.<br>
-          <h6 style="text-align:left;color:#070707;padding: 0px 10px;">Relevant Coursework</h6>
-          <ul style="text-align:left;color:#030303;">
-            <li>Deep Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Mobile App Development</li>
-            <li>Human Computer Interaction</li>
-          </ul>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 d-flex flex-column justify-content-center align-items-center"
-          style="text-align: center;"> <a href="https://uet.edu.pk/" target="_blank"><img
-              src="assets/img/education/uet2.png" class="img-fluid" alt="UET Lahore" height="250" width="250"></a></div>
-      </div>
-    </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <div class="portfolio">
-      <div class="container">
-        <div class="section-title" style="margin-bottom: 20px;">
-          <h2 style="margin-bottom: 20px;">Online Certifications</h2>
-        </div>
-        <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/icl.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Maths for Machine Learning</h4>
-                <div class="portfolio-links">
-                  <a:disabled href="#" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/dai.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Deep Neural NetworKs</h4>
-                <div class="portfolio-links">
-                  <a:disabled href="#" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/umi.jpg" class="img-fluid" alt="" height="190px" width="450px">
-              <div class="portfolio-info">
-                <h4>Python 3 Programming Specialization</h4>
-                <div class="portfolio-links">
-                  <a:disabled href="#" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project"
-            style="position: absolute; left: 0px; top: 218.875px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/intel.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Intel OpenVino Toolkit</h4>
-                <div class="portfolio-links">
-                  <a href="#" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project"
-            style="position: absolute; left: 370px; top: 218.875px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/dai.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AI for Medical Diagnosis</h4>
-                <div class="portfolio-links">
-                  <a:disabled href="#" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project"
-            style="position: absolute; left: 740px; top: 218.875px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/ub.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Computer Vision Basics</h4>
-                <div class="portfolio-links">
-                  <a:disabled href="#" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Education Section -->
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="https://www.sdsol.com/" style="color:#000000">SDSol
-                Technologies</a><br> </h4>
-            <h6 style="text-align:left;">November 2022 - Present</h6>
-            <h5 style="text-align:left;color:#000000">Machine Learning Engineer</h5>
-            <ul style="text-align:justify;">
-              <li>Designed and developed an end-to-end recommendation system for a food related company using
-                unsupervised association rule mining and deployed using FastAPI on cloud.</li>
-              <li>Developed a Chatbot for question answering for multiple websites and PDF documents using LangChain and
-                Llama-index (Used GPT-4, BERT, LongFormer for generating answers)
-              </li>
-              <li>Developed an end-to-end query classification pipeline. Collected data from various resources, used
-                ChatGPT API for generating synthetic data and used Logistic Regression, SVM and BERT for query
-                classification, deployed the model using FastAPI.</li>
-              <li>Developed a video subtitle generation pipeline using OpenAI's Whisper and deployed as a custom
-                software
-                solution. </li>
-              <li>Developed a tennis analytics system using a fine-tuned Yolo-v8 model. </li>
-              <li>Developed an audio to video lip movement synchronization script leveraging a state of the art Wav2Lip
-                Model. </li>
-              <li>Developed an insect classification model and deployed on Azure using Container Registry and App
-                service.
-              </li>
-              <li>Developed an API for sentence's semantic similarity calculation using Sentence Transformers. </li>
-              <li>Developed multiple APIs in FastAPI for object recognition and text classification. </li>
-              <li>Designed and developed multiple UIs for Machine Learning model demos using Streamlit. </li>
-              <li>Worked with backend developers to deploy and integrate ML models with existing systems in production.
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="https://www.wortel.ai/" style="color:#000000">Wortel AI</a><br> </h4>
-            <h6 style="text-align:left;">November 2021 - January 2022</h6>
-            <h5 style="text-align:left;color:#000000">Software Engineer (Deep Learning and Computer Vision)</h5>
-            <ul style="text-align:justify;">
-              <li>Worked on Agricultre related projects such as weed detection using YOLOv5 algorithm</li>
-              <li>Developed a medical speech recognition system by fine‑tuning an Nvidia QuartzNet model via NeMo
-                library
-              </li>
-              <li>Worked on AWS S3 and MLFlow platform for deployment and maintenance of deep learning models.</li>
-              <li>Worked on researching various methods for converting deep learning models to work with different ML
-                libraries.</li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="https://www.uet.edu.pk/" style="color:#000000">University of
-                Engineering & Technology, Lahore</a><br> </h4>
-            <h6 style="text-align:left;">March 2021 - September 2022</h6>
-            <h5 style="text-align:left;color:#000000">AI Instructor</h5>
-            <ul style="text-align:justify;">
-              <li>I was previously assoiated with UET Lahore.</li>
-              <li>Taught undergraduate AI courses and conducted practical labs.</li>
-              <li>Delivered practical lectures on Machine Learning and Deep Learning.</li>
-              <li>Assisted the senior faculty in designing course contents and writing proposals for research grants.
-              </li>
-              <li>Helped and guided final-year students in their ML based FYPs.</li>
-              <li>Worked on researching the latest AI technologies to solve real-world problems.</li>
-              <span id="achivement">Achievements</span>
-              <li>A research proposal entitled "Tea disease detection using Machine Learning and Remote Sensing" that I
-                wrote won a grant of PKR 3.5 Million from Higher Education Commission's National Research Program for
-                Universities.</li>
-              <li>Published a journal paper entitled "Detection and Classification of Malignant Melanoma Using Deep
-                Features of NASNet"</li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="#" style="color:#000000">UpWork</a><br> </h4>
-            <h6 style="text-align:left;">November 2020 - March 2021</h6>
-            <h5 style="text-align:left;color:#000000">Freelance Deep Learning Engineer</h5>
-            <ul style="text-align:justify;">
-              <li>Developed an image captioning algorithm for image retrieval using image’s natural language
-                description.</li>
-              <li>Designed and developed a GAN model for Covid detection in CT Scans.</li>
-              <li>Worked on various object detection projects using YOLO models.</li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="https://kics.edu.pk/" style="color:#000000">Al-Khawarizmi Institute of
-                Computer Science</a><br> </h4>
-            <h6 style="text-align:left;">January 2020 - October 2020</h6>
-            <h5 style="text-align:left;color:#000000">Research Assistant (Deep Learning)</h5>
-            <ul style="text-align:justify;">
-              Worked on Melanoma Diagnosis in Bioinformatics Research Lab at KICS UET Lahore where I used Computer-Based
-              Diagnosis (Deep Learning and Computer Vision) to detect and classify a rare type of skin cancer. Two
-              research papers has been published from the outcomes of this research.
-              <li>Worked with Prof. Dr. Muhammad Usman Ghani Khan on detection of rare and lethal Acral Lentiginous
-                Melanoma.
-              </li>
-              <li>Developed a detection system for acral melanoma in dermoscopic images using proposed CNN architecture.
-              </li>
-              <li>Worked on Plant Disease Detection datasets and deployed classification models as REST APIs</li>
-              <li>Worked on Intelligent crop disease detection system using deep transfer learning.</li>
-              <li>Developed a deep learning algorithms for steel defect classification</li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="https://wizdojo.com/" style="color:#000000">Wizdojo
-                Technologies</a><br> </h4>
-            <h6 style="text-align:left;">August 2019 - December 2019</h6>
-            <h5 style="text-align:left;color:#000000">Computer Vision Engineer</h5>
-            <ul style="text-align:justify;">
-              Assisted in design and development of a Video Analytics System for cars at parking station which stores
-              information related to cars, where it was parked, it's number plate and will inform user whether the
-              specific place is available for parking or not. My responsibilities were to:
-              <li>Research and develop best vehicle registration plate segmentation model.</li>
-              <li>Develop a large dataset from videos and annotation of images dataset.</li>
-              <li>Training, Testing and evaluation of deep learning model (Mask R-CNN) using test dataset.</li>
-              <li>Research Python code optimization techniques.</li>
-              <li>Developed a small website using HTML, CSS and Bootstrap.</li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="margin-bottom: -60px;">
-            <h4 style="text-align:left;"><a href="https://kics.edu.pk/" style="color:#000000">Al-Khawarizmi Institute of
-                Computer Science</a><br> </h4>
-            <h6 style="text-align:left;">October 2018 - December 2018</h6>
-            <h5 style="text-align:left;color:#000000">Computer Vision Intern</h5>
-            <ul style="text-align:justify;">
-              Worked as a Computer Vision and Deep Learning Intern. I worked on following project
-              <li>Learnt the basics of ANNs, CNNs and deep learning.</li>
-              <li>Developed small CNNs for object recognition.</li>
-              <li>Developed GUIs for Object Recognition models deployment (HTML/CSS/Bootstrap).</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="container">
-      <h3 class="row">
-        <div class="d-flex align-items-between">
-          <h3>Coming Soon ... 🙌 !</h3>
-        </div>
-      </h3>
-    </div>
-  </section>
-
-  <!-- End Experience Section -->
-
-  <!-- Start Project Section -->
-
-  <section id="portfolio" class="services">
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <h5><strong>Development Projects</strong></h5>
-        </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>YouTube Visual Data Collection</b>
-              <p>This is a small CLI tool to download YouTube frames without downloading and manually extracting
-                frames
-                from YouTube videos. Just provide a YouTube video link and the CLI tool will automatically download
-                the
-                frames in your target directory.<br>
-                <em>Tech Stack & Libraries</em> : Python, OpenCV, VidGear, ArgrParse <br>
-                <a href="https://github.com/qaixerabbas/youtube-frame-capture">GitHub Link</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/youtube.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"></div>
-        <br>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Video Subtitles Generation</b>
-              <p>A python program for generating video subtitles. The program utilizes OpenAI's Whisper model for
-                converting speech to text and then this data is used to generate subtitle files. The program currently
-                can generate .srt and .vtt foramts for subtitles.<br>
-                <em>Tech Stack & Libraries</em> : Python, whisper <br>
-                <a href="#">GitHub Link</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/openai.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>DeepDS: A python cli tool for dataset creation</b>
-              <p>This is a useful cli tool currently under development. It accepts a video (local video file or
-                YouTube
-                link) and utilized optimized deep learning model to generate datasets for high level computer vision
-                tasks. It reads video, runs deep learning model on individual frames and classified and sorts output
-                frames into seprate directory based on predicted class.<br>
-                <em>Tech Stack & Libraries</em> : Python, OpenVino, Inception V3, VidGear, ArgreParse <br>
-                <a href="#">Github Link</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/dataset.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Python Automation Scripts</b>
-              <p>This repo has multiple automation scripts using Python. The scripts can be used in any computer
-                vision
-                projects. It has scripts to read, write, resize and perform multiple operations on images.<br>
-                <em>Tech Stack & Libraries</em> : Python, OpenCV, Augmentor, PyTorch, NumPy, Pandas <br>
-                <a href="https://github.com/qaixerabbas/simple-python-codes">GitHub Link</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/python.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Metal Surface Defect Classification</b>
-              <p>In this project a dataset for steel defect detection by NEU was used classification of steel surface
-                defects. Dataset has total six classes. A ResNet-18 was finetuned to classify the input images into
-                one
-                of the six classes. The model achieved 97% accuracy (approx.) <br>
-                <em>Tech Stack & Libraries</em> : Python, FastAI, PyTorch, OpenCV, Pandas, Scikit-learn,
-                Matplotlib<br>
-                <a href="https://github.com/qaixerabbas/steel_defect_detection">GitHub Link</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/steel.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px""> </div>
-
-        <div class=" col-lg-12 col-md-12">
-          <h5><strong>Research Projects</strong></h5>
-        </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Skin Lesion Analysis for Skin Cancer Detection</b>
-              <p>This was my MS thesis project. I worked on skin cancer (Acral Melanoma) detection and classification
-                from Dermoscopy images. A data centric approach was used to enhance limited training data. Various
-                deep
-                learning models were trained to select the best model. Our AMNet model was a modified ResNet-18
-                architecture that performed better to diagnose Acral Melanoma. In addition, a NASNet model was also
-                used
-                for binary classification of Melanoma skin cancer.<br>
-                <em>Tech Stack & Libraries</em> : Python, OpenCV, Augmentor, PyTorch, Keras, TensorFlow, ResNets,
-                MobileNets,
-                NASNet <br>
-                <a href="https://github.com/qaixerabbas/melanoma-classification">GitHub Link</a> | <a
-                  href="https://link.springer.com/article/10.1186/s42492-021-00091-z">AM
-                  Detection</a> |
-                <a href="https://link.springer.com/article/10.1007/s42979-022-01439-9">Melanoma Detection</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/skincancer.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Punjabi Named Entity Recognition</b>
-              <p>This project tackles the problem of NER for low resource languages. We worked on data generation for
-                Punjabi (Shahmukhi Script). A multilingual BERT model was trained for NER task. We developed a large
-                training corpora using a simple and novel PoW augmentation technique. The publication is accepted in
-                the prestigious ACM TALLIP.<br>
-                <em>Tech Stack & Libraries</em> : Python, BERT, NLTK, SpaCy<br>
-                <a href="https://github.com/qaixerabbas/punjabiNER">GitHub Link</a> | <a
-                  href="https://dl.acm.org/doi/10.1145/3595861">Paper</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/ner.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Efficient Network Intrusion Detection for Secure Systems</b>
-              <p>We experimented with various machine learning models for recent intrusion detection datasets.
-                NSL-KDD, CSE-CIC-IDS2018 and UNSW-NB-15 datasets were used in the study. Five major ML algorithms were
-                trained on preprocessed datasets. We proposed a hybrid, cost and compute efficinet ensemble model for
-                development of secure IDS systems. The publication is currently under review in PeerJ Computer
-                Science.<br>
-                <em>Tech Stack & Libraries</em> : Python, scikit-learn, Pandas, NumPy <br>
-                <a href="https://github.com/qaixerabbas/network_intrusion_detection">GitHub Link</a> | <a
-                  href="#">Paper</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/nids.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Lung Cancer Classification from Limited Data</b>
-              <p>We used a recent dataset named as LC-25000 for lungs cancer classification. The dataset
-                contains 15000 images of lungs histopathology. We trained two ResNets (18 and 50), MobileNet and
-                AlexNet model for classification. A maximum accuracy of 98% was achived using ResNet-18 algorithm.
-                <br>
-                <em>Tech Stack & Libraries</em> : Python, PyTorch, FastAI, OpenCV <br>
-                <a href="https://github.com/qaixerabbas/melanoma-classification/tree/master/lungs_cancer">GitHub
-                  Link</a> | <a href="#">Report</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/lung.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-        <div class="col-lg-8 col-md-8">
-          <ul>
-            <li>
-              <i class="fa fa-laptop"></i> <b>Detection & Classification of Firearms</b>
-              <p>This was a term project for my Machine Learning course @UET during my MS. We collected and anotated a
-                large datasets of firearms divided into five categories. Data was collected from YouTube and other
-                video
-                files from web. A YOLOv3 model was trained for detection and classification while a Mask-RCNN model
-                was
-                trained for instance segmentation of firearms. We achieved a 97% accuracy for detection and
-                classification. <br>
-                <em>Tech Stack & Libraries</em> : Python, PyTorch, FastAI, OpenCV, yt_downloader <br>
-                <a href="https://github.com/qaixerabbas/Firearm-Detection-and-Classification-using-Yolo-V3">GitHub
-                  Link</a> | <a href="#">Report</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4" style="text-align: center;"> <img src="assets/img/project/firearm.svg"
-            class="img-fluid" alt="UOS" height="120px" width="120px"> </div>
-      </div>
-    </div> -->
-    <div class="container">
-      <h3 class="row">
-        <div class="d-flex align-items-between">
-          <h3>Coming Soon ... 🙌 !</h3>
-        </div>
-      </h3>
-    </div>
-  </section>
-
-  <!-- End Project Section -->
-
-  <!-- Start Skills Section -->
-
-  <section id="skills" class="services">
-    <div class="container" style="margin-top: 20px;">
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-            <div class="skills_one" style="text-align: left; display: flex;">
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/project/python.svg" alt="Python3" height="100" width="70">
-                <div>Python 3</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/net.svg" alt=".NET Core" height="100" width="70">
-                <div>.NET Core</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/vuejs.svg" alt="Vue JS" height="100" width="70">
-                <div>Vue JS</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;;">
-                <img src="assets/img/skills/c++.svg" alt="C" height="100" width="70">
-                <div>C</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/cc.svg" alt="C++" height="100" width="70">
-                <div>C++</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/mongodb.svg" alt="MongoDB" height="100" width="70">
-                <div>MongoDB</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/mysql.svg" alt="MySQL" height="100" width="70">
-                <div>MySQL</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
-            style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Machine Learning</h4>
-            <div class="skills_one" style="text-align: left; display: flex;">
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/pandas.svg" alt="Pandas" height="100" width="70">
-                <div>Pandas</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;;">
-                <img src="assets/img/skills/numpy.svg" alt="NumPy" height="100" width="70">
-                <div>NumPy</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/opencv.svg" alt="OpenCV" height="100" width="70">
-                <div>OpenCV</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/sklearn.svg" alt="sklearn" height="100" width="70">
-                <div>Scikit-learn</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/matplotlib.svg" alt="Matplotlib" height="100" width="70">
-                <div>Matplotlib</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/plotly.svg" alt="Plotly" height="100" width="70">
-                <div>Plotly</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/seaborn.svg" alt="Seaborn" height="100" width="70">
-                <div>Seaborn</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
-            style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Deep Learning Frameworks</h4>
-            <div class="skills_one" style="text-align: left; display: flex;">
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/tensorflow.svg" alt="TensorFlow" height="100" width="70">
-                <div>TensorFlow</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;;">
-                <img src="assets/img/skills/keras.svg" alt="Keras" height="100" width="70">
-                <div>Keras</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/pytorch.svg" alt="PyTorch" height="100" width="70">
-                <div>PyTorch</div>
-              </div>
-              <!-- <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/openvino-2.svg" alt="OpenVino" height="100" width="70">
-                <div>OpenVino</div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Web Engineering</h4>
-            <div class="skills_one" style="text-align: left; display: flex;">
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/html5.svg" alt="HTML5" height="100" width="70">
-                <div>HTML5</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;;">
-                <img src="assets/img/skills/css3.svg" alt="CSS3" height="100" width="70">
-                <div>CSS3</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/bootstrap.svg" alt="Bootstrap" height="100" width="70">
-                <div>Bootstrap</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/fastapi.svg" alt="FastAPI" height="100" width="70">
-                <div>FastAPI</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/flask.svg" alt="Flask" height="100" width="70">
-                <div>Flask</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
-            style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Tools</h4>
-            <div class="skills_one" style="text-align: left; display: flex;">
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/git.svg" alt="Git" height="100" width="70">
-                <div>Git</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;;">
-                <img src="assets/img/skills/docker.svg" alt="Docker" height="100" width="70">
-                <div>Docker</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/jupyter.svg" alt="Jupyter Notebook" height="100" width="70">
-                <div>Jupyter Notebook</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/postman.svg" alt="Postman" height="100" width="70">
-                <div>Postman</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/visualstudio.svg" alt="Visual Studio" height="100" width="70">
-                <div>Visual Studio</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/vscode.svg" alt="VSCode" height="100" width="70">
-                <div>VSCode</div>
-              </div>
-              <div style="text-align:center; margin-right:20px;">
-                <img src="assets/img/skills/azure.svg" alt="Azure" height="100" width="70">
-                <div>Azure</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- End Skills Section -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["ML Engineer", "Data Scientist", "AI Developer"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>

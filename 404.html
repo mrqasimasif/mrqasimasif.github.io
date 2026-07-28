@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Muhammad Qasim</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var sys = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", saved || sys);
+      } catch (e) { }
+    })();
+  </script>
+  <style>
+    .nf {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nf__code {
+      font-family: var(--font-mono);
+      font-size: clamp(4rem, 18vw, 9rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="nf">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <p class="nf__code">404</p>
+      <h1 class="section-title" style="margin-top:.5rem">This page took a wrong turn.</h1>
+      <p class="section-sub" style="margin-inline:auto;max-width:44ch">
+        The URL doesn't match anything here. Everything lives on one page anyway.
+      </p>
+      <p style="margin-top:2rem">
+        <a class="btn btn--primary" href="/">Back to the portfolio</a>
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>
