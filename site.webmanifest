@@ -1,0 +1,12 @@
+{
+  "name": "Muhammad Qasim — Machine Learning Engineer",
+  "short_name": "M. Qasim",
+  "description": "Portfolio of Muhammad Qasim — machine learning, computer vision, NLP and LLM systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08080b",
+  "theme_color": "#08080b",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
